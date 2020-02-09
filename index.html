@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
-    <meta charset="UTF-8">
-    <!--Indicative of the size porportions for device compatability-->
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--link to the bootstrap stylesheet-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <!--link-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <!--link-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <!--link to the css stylesheet-->
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+  <meta charset="UTF-8" />
+  <!--Indicative of the size porportions for device compatability-->
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--link to the bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!--link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--link-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!--link to the css stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
 </head>
-
+ 
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
@@ -34,80 +25,97 @@
     <p class="lead">A calendar application for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-
+ 
+  <div class="date" id="date">
+ 
+  </div>
+ 
   <div class="container">
     <!-- 9 am  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="9 am"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(0)">
+        LOCK
+      </button>
     </div>
     <!-- 10 am  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="10 am"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(1)">
+        LOCK
+      </button>
     </div>
     <!-- 11 am  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="11 am"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(2)">
+        LOCK
+      </button>
     </div>
     <!-- 12 pm  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="12 am"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(3)">
+        LOCK
+      </button>
     </div>
     <!-- 1 pm  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="1 pm"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(4)">
+        LOCK
+      </button>
     </div>
     <!-- 2 pm -->
-    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+    <div class="card, input-group mb-3">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="2 pm"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(5)">
+        LOCK
+      </button>
     </div>
     <!-- 3 pm  -->
     <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="3 pm"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(6)">
+        LOCK
+      </button>
     </div>
     <!-- 4 pm  -->
-    <div class="card, input-group mb-3">>
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="card-body">  
-      </div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">LOCK</button>
+    <div class="card, input-group mb-3">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="4 pm"
+       aria-describedby="button-addon2" />
+      <div class="card-body"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="test(7)">
+        LOCK
+      </button>
     </div>
-
-
-
-
-
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.
-    
+ 
 </body>
-
-<!--include a footer and my stamp-->
-<footer class="footer mt-auto py-3 bg-dark">
+ 
+ 
+<footer class=" footer mt-auto py-3 bg-dark">
   <div class="container d-flex justify-content-center">
-    <span class="text-muted">mtSpace</span>
+    <span class="text-muted">CHANGEME</span>
   </div>
 </footer>
+ 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
+ 
 </html>
