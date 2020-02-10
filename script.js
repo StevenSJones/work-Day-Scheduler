@@ -8,28 +8,24 @@ var time2 = document.querySelector("#time2");
 var time3 = document.querySelector("#time3");
 var time4 = document.querySelector("#time4");*/
 
-/*function calendar() {
-    //Time at 9AM
-    var timeat9 = m.format("9 [AM]").toString();
-    time9.append(timeat9);
-  
-    var col9 = document.querySelector("#col9");
-    x = document.createElement("INPUT");
-    x.setAttribute("type", "text");
-    x.setAttribute("class", "input9");
-    if (timeat9 == m.format("H [AM]").toString()) {
-      x.setAttribute("placeholder", "Current time");
-      x.style.backgroundColor = "red";
-      col9.append(x);
-    } else if (m.format("H") < m.format("09")) {
-      x.setAttribute("placeholder", "Coming time");
-      x.style.backgroundColor = "green";
-      col9.append(x);
-    } else {
-      x.setAttribute("placeholder", "Passed time");
-      x.style.backgroundColor = "silver";
-      col9.append(x);
-    }*/
+//text box array
+var textboxArray = $(".form-control");
+//name of array forEach funct that will go through each element in the array
+//the function and I am passing in the elements in the array
+textboxArray.forEach(function(myElement){{
+          if ( this.moment === "ago" ) {
+            this.style.color = ".past";
+          } 
+            else if (this.moment === "from now") {
+                this.style.color = ".future";
+                }
+                else {
+                    this.style.color = ".present";
+                }
+            
+        };
+      });
+
 
 
 //text box array
