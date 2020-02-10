@@ -1,13 +1,3 @@
-//query selectors 
-/*var time9 = document.querySelector("#time9");
-var time10 = document.querySelector("#time10");
-var time11 = document.querySelector("#time11");
-var time12 = document.querySelector("#time12");
-var time1 = document.querySelector("#time1");
-var time2 = document.querySelector("#time2");
-var time3 = document.querySelector("#time3");
-var time4 = document.querySelector("#time4");*/
-
 //text box array
 var textboxArray = $(".form-control");
 //name of array forEach funct that will go through each element in the array

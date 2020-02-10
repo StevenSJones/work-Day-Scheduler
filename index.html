@@ -31,91 +31,109 @@
   </div>
  
   <div class="container">
-    <!-- 9 am  -->
-    <h2> 9 am </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 9 am timeblock" aria-label="9 am"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(0)">
-        LOCK
-      </button>
-    </div>
-    <!-- 10 am  -->
-    <h2> 10 am </h2> 
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input 10 am timeblock" aria-label="10 am"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(1)">
-        LOCK
-      </button>
-    </div>
-    <!-- 11 am  -->
-    <h2> 11 am </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 11 am timeblock" aria-label="11 am"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(2)">
-        LOCK
-      </button>
-    </div>
-    <!-- 12 pm  -->
-    <h2> 12 pm </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 12 pm timeblock" aria-label="12 am"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(3)">
-        LOCK
-      </button>
-    </div>
-    <!-- 1 pm  -->
-    <h2> 1 pm </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 1 pm timeblock" aria-label="1 pm"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(4)">
-        LOCK
-      </button>
-    </div>
-    <!-- 2 pm -->
-    <h2> 2 pm </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 2 pm timeblock" aria-label="2 pm"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(5)">
-        LOCK
-      </button>
-    </div>
-    <!-- 3 pm  -->
-    <h2> 3 pm </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 3 pm timeblock" aria-label="3 pm"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(6)">
-        LOCK
-      </button>
-    </div>
-    <!-- 4 pm  -->
-    <h2> 4 pm </h2>
-    <div class="card, input-group mb-3">
-      <input type="text" class="form-control" placeholder="Input for 4 pm timeblock" aria-label="4 pm"
-       aria-describedby="button-addon2" />
-      <div class="card-body"></div>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="test(7)">
-        LOCK
-      </button>
-    </div>
+    <table style="width: 100%;">
+      <tr id="row0">
+        <td>9AM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 9 am timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(0, 9)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row1">
+        <td>10AM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 10 am timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(1, 10)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row2">
+        <td>11AM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 11 am timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(2, 11)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row3">
+        <td>12PM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 12 pm timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(3, 12)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row4">
+        <td>1PM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 1 pm timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(4, 13)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row5">
+        <td>2PM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 2 pm timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(5, 14)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row6">
+        <td>3PM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 3 pm timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(6, 15)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+      <tr id="row7">
+        <td>4PM</td>
+        <td>
+          <input type="text" class="form-control" placeholder="Input for 4 pm timeblock" aria-label="9 am"
+           aria-describedby="button-addon2" />
+        </td>
+        <td>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(7, 16)">
+            LOCK
+          </button>
+        </td>
+      </tr>
+    </table>
   </div>
  
 </body>
  
- <!--footer-->
+<!--footer-->
 <footer class=" footer mt-auto py-3 bg-dark">
   <div class="container d-flex justify-content-center">
     <span class="text-muted">SSJones</span>
